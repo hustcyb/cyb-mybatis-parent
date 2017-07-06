@@ -18,7 +18,7 @@ import com.cyb.spring.boot.mybatis.service.StudentService;
  * @author Administrator
  *
  */
-@RequestMapping("student")
+@RequestMapping("students")
 @RestController
 public class StudentController {
 	
