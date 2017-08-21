@@ -19,7 +19,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.cyb.spring.boot.mybatis.app.Application;
-import com.cyb.spring.boot.mybatis.common.BeanUtils;
+import com.cyb.spring.boot.mybatis.common.util.BeanUtils;
 import com.cyb.spring.boot.mybatis.domain.Student;
 
 @RunWith(SpringJUnit4ClassRunner.class)

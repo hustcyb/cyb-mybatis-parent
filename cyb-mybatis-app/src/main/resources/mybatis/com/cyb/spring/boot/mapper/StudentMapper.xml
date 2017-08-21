@@ -13,4 +13,39 @@
             WHERE id = #{id}
         ]]>
     </select>
+    <insert id="insertSelective" parameterType="Student" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO student
+        <trim prefix = "(" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                name,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix = "(" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                #{name},
+            </if>
+            <if test="age != null">
+                #{age},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateSelectiveById" parameterType="Student">
+        UPDATE student
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="age != null">
+                age = #{age},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+    <delete id="deleteById" parameterType="int">
+        DELETE FROM student WHERE id = #{id}
+    </delete>
 </mapper>

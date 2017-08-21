@@ -1,4 +1,4 @@
-package com.cyb.spring.boot.mybatis.common;
+package com.cyb.spring.boot.mybatis.common.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
