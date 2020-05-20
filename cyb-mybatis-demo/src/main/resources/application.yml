@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/test
+    username: admin
+    password: 123
+    driverClassName: com.mysql.cj.jdbc.Driver
+    
+mybatis:
+  type-aliases-package: com.cyb.mybatis.demo.domain
+  mapper-locations: classpath:mybatis/*.xml
